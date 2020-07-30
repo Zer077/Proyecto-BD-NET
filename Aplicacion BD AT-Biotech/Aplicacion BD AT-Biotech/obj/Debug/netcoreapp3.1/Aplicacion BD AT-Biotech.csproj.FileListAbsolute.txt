@@ -1,0 +1,12 @@
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\bin\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.exe
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\bin\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.deps.json
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\bin\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.runtimeconfig.json
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\bin\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.runtimeconfig.dev.json
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\bin\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\bin\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.pdb
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\obj\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.AssemblyInfoInputs.cache
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\obj\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.AssemblyInfo.cs
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\obj\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.csproj.CoreCompileInputs.cache
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\obj\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\obj\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.pdb
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Aplicacion BD AT-Biotech\obj\Debug\netcoreapp3.1\Aplicacion BD AT-Biotech.genruntimeconfig.cache
