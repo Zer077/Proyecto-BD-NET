@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
+
+/// <summary>
+/// CRUD de la API
+/// </summary>
 namespace web.Controllers
 {
     public class LibretaController : ApiController
     {
-        private Contacto contexto = new Contacto();
 
         /// <summary>
         /// Metodo que extrae todos los contactos
@@ -20,13 +23,18 @@ namespace web.Controllers
             return new LibretaRepositorio().ObtenerContactos();
         }
 
+
+
+
         /// <summary>
-        /// Metodo que devuelve un contacto por id
+        /// Metodo que devuelve SOLO un contacto por id
         /// </summary>
+        /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
         public Contacto Get(int id)
         {
+            //obtengo a un contacto segun su id
             using (var contexto = new LibretaATBiotechEntities())
             {
                 return contexto.Contactoes.FirstOrDefault(c => c.ID == id);
@@ -63,8 +71,9 @@ namespace web.Controllers
         {
             if (ModelState.IsValid)
             {
+                //si el contacto existe
                 if (new LibretaATBiotechEntities().Contactoes.Count(c => c.ID == id) > 0)
-                {
+                {//modifico el contacto
                     new LibretaRepositorio().ModificarContacto(contacto);
 
                     return Ok();
@@ -88,9 +97,12 @@ namespace web.Controllers
         [HttpDelete]
         public IHttpActionResult EliminarContacto(int id)
         {
+
+            //compruebo si este usuario existe
             var contacto = new LibretaATBiotechEntities().Contactoes.Find(id);
             if (contacto != null)
             {
+                //Elimino el contacto
                 new LibretaRepositorio().EliminarContacto(id);
 
                 return Ok(contacto);

@@ -9,7 +9,7 @@ namespace Modelo.Repositorios
     public class LibretaRepositorio
     {
         /// <summary>
-        /// Obtiene La libreta
+        /// Obtiene todos los contactos
         /// </summary>
         /// <returns></returns>
         public List<Contacto> ObtenerContactos()
@@ -47,7 +47,7 @@ namespace Modelo.Repositorios
         }
 
         /// <summary>
-        /// Modifica el contacto al pasarle un objeto
+        /// Modifica el contacto que le pasas con los datos introducidos
         /// </summary>
         /// <param name="nuevoContacto"></param>
         public void ModificarContacto(Contacto nuevoContacto)
@@ -56,13 +56,19 @@ namespace Modelo.Repositorios
             {
                 using (var contexto = new LibretaATBiotechEntities())
                 {
+
+                    //Busca el contacto con la misma id en la libreta 
                     Contacto contactoOriginal = contexto.Contactoes.Where(contacto => contacto.ID == nuevoContacto.ID).First();
+
+                    //Modifica sus valores
                     contactoOriginal.Nombre = nuevoContacto.Nombre;
                     contactoOriginal.Apellido = nuevoContacto.Apellido;
                     contactoOriginal.Direccion = nuevoContacto.Direccion;
                     contactoOriginal.Email = nuevoContacto.Email;
                     contactoOriginal.Empresa = nuevoContacto.Empresa;
                     contactoOriginal.Telefono = nuevoContacto.Telefono;
+
+                    //Lo modifica en la BD
                     contexto.Entry(contactoOriginal).State = System.Data.Entity.EntityState.Modified;
                     contexto.SaveChanges();
                 }
@@ -84,8 +90,10 @@ namespace Modelo.Repositorios
             {
                 using (var contexto = new LibretaATBiotechEntities())
                 {
+                    //Busca el contacto a eliminar
                     Contacto contactoEliminar = contexto.Contactoes.Where(contacto => contacto.ID == id).First();
 
+                    //Lo elimina en la BD
                     contexto.Entry(contactoEliminar).State = System.Data.Entity.EntityState.Deleted;
                     contexto.SaveChanges();
                 }

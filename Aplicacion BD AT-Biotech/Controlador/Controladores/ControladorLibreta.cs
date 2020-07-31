@@ -16,13 +16,7 @@ namespace Controlador.Controladores
             foreach (var contacto in LibretaDatos)
             {
                 var dto = new ContactoDTO();
-                //dto.ID = contacto.ID;
-                //dto.Nombre = contacto.Nombre;
-                //dto.Apellido = contacto.Apellido;
-                //dto.Direccion = contacto.Direccion;
-                //dto.Email = contacto.Email;
-                //dto.Empresa = contacto.Empresa;
-                //dto.Telefono = contacto.Telefono;
+                 
                 Conversor.Parse(contacto, ref dto);
 
                 ListaDevolver.Add(dto);
@@ -37,12 +31,7 @@ namespace Controlador.Controladores
         public void InsertarContacto(ContactoDTO contactoDTO)
         {
             Contacto contactoBD = new Contacto();
-            //contactoBD.Nombre = contactoDTO.Nombre;
-            //contactoBD.Apellido = contactoDTO.Apellido;
-            //contactoBD.Email = contactoDTO.Email;
-            //contactoBD.Empresa = contactoDTO.Empresa;
-            //contactoBD.Direccion = contactoDTO.Direccion;
-            //contactoBD.Telefono = contactoDTO.Telefono;
+             
 
             Conversor.Parse(contactoDTO, ref contactoBD);
 
@@ -56,14 +45,7 @@ namespace Controlador.Controladores
         public void ModificarContacto(ContactoDTO contactoModificado)
         {
             Contacto contactoBD = new Contacto();
-            //contactoBD.ID = contactoModificado.ID;
-            //contactoBD.Nombre = contactoModificado.Nombre;
-            //contactoBD.Apellido = contactoModificado.Apellido;
-            //contactoBD.Email = contactoModificado.Email;
-            //contactoBD.Empresa = contactoModificado.Empresa;
-            //contactoBD.Direccion = contactoModificado.Direccion;
-            //contactoBD.Telefono = contactoModificado.Telefono;
-
+             
             Conversor.Parse(contactoModificado, ref contactoBD);
             new Modelo.Repositorios.LibretaRepositorio().ModificarContacto(contactoBD);
         }

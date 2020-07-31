@@ -15,9 +15,11 @@ namespace ConsumeWeb.Controllers
         public async Task<ActionResult> Index()
         {
             List<Contacto> listaContactos = new List<Contacto>();
+            //Establezco la conexion
 
             using (var cliente = new HttpClient())
             {
+                //establecemos la ruta de la API
                 cliente.BaseAddress = new Uri(url);
                 cliente.DefaultRequestHeaders.Clear();
                 cliente.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
@@ -35,7 +37,7 @@ namespace ConsumeWeb.Controllers
         }
 
         /// <summary>
-        /// Get del edit
+        /// Get del create
         /// </summary>
         /// <returns></returns>
         public ActionResult create()
@@ -44,17 +46,22 @@ namespace ConsumeWeb.Controllers
         }
 
         /// <summary>
-        /// Put del edit
+        /// Put del create
         /// </summary>
         /// <param name="contacto"></param>
         /// <returns></returns>
         [HttpPost]
         public ActionResult Create(Contacto contacto)
         {
+
+            //Creo el objeto fuera para saber los errores que pueda dar
             HttpResponseMessage respuesta;
+            //Establezco la conexion
+
             using (var cliente = new HttpClient())
             {
-                cliente.BaseAddress = new Uri("https://localhost:44398/api/libreta");
+                //establecemos la ruta de la API
+                cliente.BaseAddress = new Uri(url + "/api/libreta");
                 var postTask = cliente.PostAsJsonAsync<Contacto>("libreta", contacto);
                 postTask.Wait();
                 respuesta = postTask.Result;
@@ -63,6 +70,7 @@ namespace ConsumeWeb.Controllers
                     return RedirectToAction("Index");
                 }
             }
+            //si me da error me dice el error concreto que fue 
             ModelState.AddModelError(string.Empty, "ERROR " + respuesta.ReasonPhrase + " " + respuesta.Content);
             return View(contacto);
         }
@@ -77,6 +85,7 @@ namespace ConsumeWeb.Controllers
         {
             using (var cliente = new HttpClient())
             {
+                //establecemos la ruta de la API
                 cliente.BaseAddress = new Uri(url);
                 var putTask = cliente.PutAsJsonAsync($"/api/libreta/{contacto.ID}", contacto);
                 putTask.Wait();
@@ -98,10 +107,13 @@ namespace ConsumeWeb.Controllers
         public ActionResult Edit(int id)
         {
             Contacto contacto = null;
+            //Establezco la conexion
             using (var cliente = new HttpClient())
             {
+                //establecemos la ruta de la API
                 cliente.BaseAddress = new Uri(url);
                 var responseTask = cliente.GetAsync("/api/libreta/" + id.ToString());
+                //Espera que se complete la ejecución
                 responseTask.Wait();
                 var respuesta = responseTask.Result;
                 if (respuesta.IsSuccessStatusCode)
@@ -122,10 +134,16 @@ namespace ConsumeWeb.Controllers
         public ActionResult Delete(int id)
         {
             Contacto contacto = null;
+            //Establezco la conexion
+
             using (var cliente = new HttpClient())
             {
+
+                //establecemos la ruta de la API
                 cliente.BaseAddress = new Uri(url);
                 var responseTask = cliente.GetAsync("/api/libreta/" + id.ToString());
+                //Espera que se complete la ejecución
+
                 responseTask.Wait();
                 var respuesta = responseTask.Result;
                 if (respuesta.IsSuccessStatusCode)
@@ -142,10 +160,15 @@ namespace ConsumeWeb.Controllers
         [HttpPost]
         public ActionResult Delete(Contacto contacto, int id)
         {
+            //Establezco la conexion
+
             using (var cliente = new HttpClient())
             {
+                //establecemos la ruta de la API
                 cliente.BaseAddress = new Uri(url);
                 var deleteTask = cliente.DeleteAsync($"api/libreta/" + id.ToString());
+
+                //Espera que se complete la ejecución
                 deleteTask.Wait();
                 var respuesta = deleteTask.Result;
                 if (respuesta.IsSuccessStatusCode)
