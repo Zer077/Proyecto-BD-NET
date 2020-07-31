@@ -35,13 +35,16 @@ namespace Modelo.Repositorios
         /// <param name="contacto"></param>
         public void InsertarContacto(Contacto contacto)
         {
-            using (var contexto = new LibretaATBiotechEntities())
+            try
             {
-                contexto.Contactoes.Add(contacto);
-                contexto.SaveChanges();
+                using (var contexto = new LibretaATBiotechEntities())
+                {
+                    contexto.Contactoes.Add(contacto);
+                    contexto.SaveChanges();
+                }
             }
+            catch (Exception) { }
         }
-
 
         /// <summary>
         /// Modifica el contacto al pasarle un objeto
@@ -71,20 +74,23 @@ namespace Modelo.Repositorios
             }
         }
 
-
         /// <summary>
         /// Elimina el contacto con el ID
         /// </summary>
         /// <param name="id"></param>
         public void EliminarContacto(int id)
         {
-            using (var contexto = new LibretaATBiotechEntities())
+            try
             {
-                Contacto libroEliminar = contexto.Contactoes.Where(contacto => contacto.ID == id).First();
+                using (var contexto = new LibretaATBiotechEntities())
+                {
+                    Contacto contactoEliminar = contexto.Contactoes.Where(contacto => contacto.ID == id).First();
 
-                contexto.Entry(libroEliminar).State = System.Data.Entity.EntityState.Deleted;
-                contexto.SaveChanges();
+                    contexto.Entry(contactoEliminar).State = System.Data.Entity.EntityState.Deleted;
+                    contexto.SaveChanges();
+                }
             }
+            catch (Exception) { }
         }
     }
 }

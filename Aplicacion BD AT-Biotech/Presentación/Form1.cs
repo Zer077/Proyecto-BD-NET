@@ -1,7 +1,6 @@
 ﻿using Controlador.EntidadesDTO;
 using System;
 using System.Windows.Forms;
-using Vista;
 
 namespace Presentación
 {
@@ -13,6 +12,7 @@ namespace Presentación
             InitializeComponent();
             actualizarLista();
         }
+
         /// <summary>
         /// Listener del boton de insertar, si algun campo está relleno insertará datos en la BD
         /// </summary>
@@ -35,8 +35,6 @@ namespace Presentación
                 string titulo = "Error";
                 MessageBoxButtons botones = MessageBoxButtons.YesNo;
                 MessageBox.Show(mensaje, titulo, botones, MessageBoxIcon.Error);
-
-
             }
             else
             {
@@ -48,6 +46,7 @@ namespace Presentación
                 actualizarLista();
             }
         }
+
         /// <summary>
         /// Listener del boton de actualizar, si has seleccionado algun campo de la tabla puedes actualizar
         /// </summary>
@@ -70,6 +69,7 @@ namespace Presentación
             MessageBox.Show(mensaje, titulo, botones, MessageBoxIcon.Information);
             actualizarLista();
         }
+
         /// <summary>
         /// Listener del boton de actualizar, si has seleccionado algun campo de la tabla puedes eliminar
         /// </summary>
@@ -77,8 +77,6 @@ namespace Presentación
         /// <param name="e"></param>
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
-
             string mensaje = "¿Está seguro de que desea eliminar este elemento?";
             string titulo = "¡Atención!";
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
@@ -86,29 +84,15 @@ namespace Presentación
 
             if (respuesta == DialogResult.Yes)
             {
-
-                actualizarLista();
                 mensaje = "Datos eliminados correctamente";
                 titulo = "Eliminación correcta";
                 botones = MessageBoxButtons.OK;
                 MessageBox.Show(mensaje, titulo, botones, MessageBoxIcon.Information);
                 new Controlador.Controladores.ControladorLibreta().EliminarContacto(int.Parse(gridContactos.CurrentRow.Cells[0].Value.ToString()));
-
-
+                actualizarLista();
             }
-
-
-
-
-
-
-
-
-
-
-
-
         }
+
         /// <summary>
         /// Actualiza la lista de contactos, ademas inhabilita los botones de actualizar y eliminar, pone todos los textos en
         /// blanco

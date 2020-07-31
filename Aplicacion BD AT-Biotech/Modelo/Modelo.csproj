@@ -54,24 +54,6 @@
     <Compile Include="Infraestructura\Contacto.cs">
       <DependentUpon>ModeloLibreta.tt</DependentUpon>
     </Compile>
-    <Compile Include="Infraestructura\Libreta.cs">
-      <DependentUpon>LibretaModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Infraestructura\LibretaModelo.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibretaModelo.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Infraestructura\LibretaModelo.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibretaModelo.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Infraestructura\LibretaModelo.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LibretaModelo.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Infraestructura\ModeloLibreta.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,18 +71,10 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\LibretaRepositorio.cs" />
-    <Compile Include="Repositorios\PruebaDeConexion.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="Infraestructura\LibretaModelo.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LibretaModelo.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Infraestructura\LibretaModelo.edmx.diagram">
-      <DependentUpon>LibretaModelo.edmx</DependentUpon>
-    </None>
     <EntityDeploy Include="Infraestructura\ModeloLibreta.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModeloLibreta.Designer.cs</LastGenOutput>
@@ -114,16 +88,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Infraestructura\LibretaModelo.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LibretaModelo.edmx</DependentUpon>
-      <LastGenOutput>LibretaModelo.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Infraestructura\LibretaModelo.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LibretaModelo.edmx</DependentUpon>
-      <LastGenOutput>LibretaModelo.cs</LastGenOutput>
-    </Content>
     <Content Include="Infraestructura\ModeloLibreta.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModeloLibreta.edmx</DependentUpon>

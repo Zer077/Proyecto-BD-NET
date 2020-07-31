@@ -1,6 +1,5 @@
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\bin\Debug\Modelo.dll
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\bin\Debug\Modelo.pdb
-C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\obj\Debug\Modelo.dll
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\obj\Debug\Modelo.pdb
@@ -10,3 +9,4 @@ C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\bin\Debug\EntityFram
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\bin\Debug\EntityFramework.xml
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache

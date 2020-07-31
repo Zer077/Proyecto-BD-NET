@@ -44,9 +44,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Controladores\ControladorLibreta.cs" />
     <Compile Include="Controladores\Conversor.cs" />
-    <Compile Include="Controladores\PruebaDeConexion.cs" />
     <Compile Include="EntidadesDTO\ContactoDTO.cs" />
-    <Compile Include="EntidadesDTO\LibretaDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

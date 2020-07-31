@@ -48,6 +48,7 @@ namespace Controlador.Controladores
 
             new Modelo.Repositorios.LibretaRepositorio().InsertarContacto(contactoBD);
         }
+
         /// <summary>
         /// Permite modificar el contacto, envia la informacion al modelo tras haber creado el objeto
         /// </summary>

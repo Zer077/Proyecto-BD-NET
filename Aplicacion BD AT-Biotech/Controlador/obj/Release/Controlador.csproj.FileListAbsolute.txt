@@ -1,0 +1,12 @@
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\Controlador.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\Controlador.pdb
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\Modelo.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\EntityFramework.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\Modelo.pdb
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\Modelo.dll.config
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\bin\Release\EntityFramework.xml
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\obj\Release\Controlador.csprojAssemblyReference.cache
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\obj\Release\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\obj\Release\Controlador.csproj.CopyComplete
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\obj\Release\Controlador.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Controlador\obj\Release\Controlador.pdb

@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Presentación\Vista.csproj", "{29D91B10-B9BA-4419-ADAA-A7A287D6187F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{EFFFE5FD-0524-4B9F-8F6B-0A715DB0E1DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "web\Web.csproj", "{EFFFE5FD-0524-4B9F-8F6B-0A715DB0E1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumeWeb", "ConsumeWeb\ConsumeWeb.csproj", "{898362B0-3FA6-42AA-95D9-B2B2153CCCD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EFFFE5FD-0524-4B9F-8F6B-0A715DB0E1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFFFE5FD-0524-4B9F-8F6B-0A715DB0E1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFFFE5FD-0524-4B9F-8F6B-0A715DB0E1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898362B0-3FA6-42AA-95D9-B2B2153CCCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898362B0-3FA6-42AA-95D9-B2B2153CCCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898362B0-3FA6-42AA-95D9-B2B2153CCCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898362B0-3FA6-42AA-95D9-B2B2153CCCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
