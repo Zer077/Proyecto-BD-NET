@@ -10,7 +10,6 @@ C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\bin\Debug\Ent
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\bin\Debug\Modelo.pdb
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\bin\Debug\Modelo.dll.config
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Vista.csprojAssemblyReference.cache
-C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Presentación.Form1.resources
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Vista.Properties.Resources.resources
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Vista.csproj.GenerateResource.cache
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Vista.csproj.CoreCompileInputs.cache
@@ -18,3 +17,4 @@ C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Vis
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Presentación.exe
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Presentación.pdb
 C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\bin\Debug\EntityFramework.dll
+C:\Users\jose_\source\repos\Aplicacion BD AT-Biotech\Presentación\obj\Debug\Presentación.Form.resources

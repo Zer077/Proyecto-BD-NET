@@ -1,6 +1,6 @@
 ﻿namespace Presentación
 {
-    partial class Form1
+    partial class Form
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -196,7 +196,7 @@
             this.gridContactos.TabIndex = 23;
             this.gridContactos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridContactos_CellClick);
             // 
-            // Form1
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -218,8 +218,8 @@
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form";
+            this.Text = "Formulario";
             ((System.ComponentModel.ISupportInitialize)(this.gridContactos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

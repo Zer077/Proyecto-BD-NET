@@ -4,13 +4,14 @@ using System.Windows.Forms;
 
 namespace Presentación
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         //inicializamos el formulario
-        public Form1()
+        public Form()
         {
             InitializeComponent();
             actualizarLista();
+ 
         }
 
         /// <summary>
@@ -134,5 +135,7 @@ namespace Presentación
             {
             }
         }
+
+         
     }
 }
