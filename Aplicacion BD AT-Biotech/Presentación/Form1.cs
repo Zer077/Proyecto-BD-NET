@@ -21,14 +21,7 @@ namespace Presentación
         /// <param name="e"></param>
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            ContactoDTO contacto = new ContactoDTO();
-
-            contacto.Nombre = txtboxNombre.Text;
-            contacto.Apellido = txtboxApellido.Text;
-            contacto.Telefono = txtboxTelefono.Text;
-            contacto.Direccion = txtboxDireccion.Text;
-            contacto.Email = txtboxEmail.Text;
-            contacto.Empresa = txtboxCompany.Text;
+           
             if (txtboxNombre.Text == "" && txtboxApellido.Text == "" && txtboxTelefono.Text == "" &&
                 txtboxDireccion.Text == "" && txtboxEmail.Text == "" && txtboxCompany.Text == "")
             {
@@ -39,6 +32,15 @@ namespace Presentación
             }
             else
             {
+                ContactoDTO contacto = new ContactoDTO();
+
+                contacto.Nombre = txtboxNombre.Text;
+                contacto.Apellido = txtboxApellido.Text;
+                contacto.Telefono = txtboxTelefono.Text;
+                contacto.Direccion = txtboxDireccion.Text;
+                contacto.Email = txtboxEmail.Text;
+                contacto.Empresa = txtboxCompany.Text;
+
                 string mensaje = "Datos insertado correctamente";
                 string titulo = "Inserción correcta";
                 MessageBoxButtons botones = MessageBoxButtons.OK;
@@ -131,8 +133,9 @@ namespace Presentación
                 txtboxDireccion.Text = gridContactos.CurrentRow.Cells[5].Value.ToString();
                 txtboxCompany.Text = gridContactos.CurrentRow.Cells[6].Value.ToString();
             }
-            catch (Exception)
+            catch (Exception )
             {
+                
             }
         }
 

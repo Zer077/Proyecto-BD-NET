@@ -68,6 +68,10 @@ namespace Modelo.Repositorios
                     contactoOriginal.Empresa = nuevoContacto.Empresa;
                     contactoOriginal.Telefono = nuevoContacto.Telefono;
 
+
+
+
+
                     //Lo modifica en la BD
                     contexto.Entry(contactoOriginal).State = System.Data.Entity.EntityState.Modified;
                     contexto.SaveChanges();
